@@ -7,17 +7,32 @@
 
 #Think of false as negative and true as positive
 
-def command(x,y):
-    direction = input("Please put in the traffic direction. Eastbound or Westound ")
-    if direction === Eastbound:
-     x = True
-        y = False
-    if direction === Westrbound:
-        x = False
-        y = True
+#Truth Chart
+
+
+#WRONG
+#def command(x,y):
+  #  direction = input("Please put in the traffic direction. Eastbound or Westound ")
+   # if direction === Eastbound:
+    # x = True
+     #   y = False
+    #if# direction === Westrbound:
+       # x = False
+        #y = True
    
    
+x = True
+y = True
+
+def truthy(x,y):
+    if x == y:
+        print("False")
+    elif x != y:
+        print("True")
+truthy(x,y)
+
+
    
    
-   
- 
+ #The if,else command can be used to check someting. Ex: if he doens't have enough 
+ #money, say no, else give money
