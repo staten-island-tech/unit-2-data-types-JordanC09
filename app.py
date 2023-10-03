@@ -1,2 +1,6 @@
-alist = [5,6,7,8,9]
-print(alist[5])
+lis1 = [1,2,50]
+
+print(max(lis1))
+
+
+#set
