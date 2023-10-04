@@ -38,15 +38,21 @@ if long - loong > 0:
 else:
     par = long
 
-number = 0
+
             
 def gcf():
+    number = 0
+    
     for i in range(par):
         if mylist[number] == hislist[number]:
-            print(number)
+            print(mylist[number])
 
         number += 1
+    print(number)
+    print(mylist)
+    print(hislist)
     
+gcf()
 
 
 #for i in range(srang):
