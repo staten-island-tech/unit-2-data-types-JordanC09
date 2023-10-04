@@ -7,51 +7,55 @@ a = int(input("Please input another number: "))
 
 mylist = []
 hislist = []
-def factors():
-    z = 1
 
-    for i in range(x):
-        y = x % z
-        if y == 0:
-            mylist.append(z)
+
+z = 1
+
+for i in range(x):
+    y = x % z
+    if y == 0:
+        mylist.append(z)
             
          
         
-        z += 1
+    z += 1
 
 
-    c = 1
-    for i in range(a):
-        b = a % c
-        if b == 0:
-            hislist.append(c)
+c = 1
+for i in range(a):
+    b = a % c
+    if b == 0:
+        hislist.append(c)
             
             
-        c += 1
+    c += 1
+    
+long = len(hislist)
+loong = len(mylist)
+
+if long - loong > 0:
+    par = loong
+else:
+    par = long
+
+number = 0
+            
+def gcf():
+    for i in range(par):
+        if mylist[number] == hislist[number]:
+            print(number)
+
+        number += 1
     
 
 
-
-    if z - c > 0:
-        sprang = z
-    else:
-        sprang = c
-    
-    
-    start = 0
+#for i in range(srang):
+#        if list1[start] == list2[start]:
+#           print(start)
+#        start += 1
 
 
 
-
-    for i in range(sprang):
-        if mylist[start] == hislist[start]:
-            print(start)
-        start += 1
-            
-        
-
-
-factors()
 
 #copy factors in factors. print if y = 0 and y = other y
 #a = x, b = y, c = z
