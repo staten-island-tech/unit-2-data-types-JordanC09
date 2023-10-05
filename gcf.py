@@ -60,7 +60,7 @@ gcf()
 #           print(start)
 #        start += 1
 
-
+#if shorter list 1 equals mylist number print it. Then add 1 to number
 
 
 #copy factors in factors. print if y = 0 and y = other y
