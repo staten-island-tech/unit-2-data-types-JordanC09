@@ -1,76 +1,74 @@
 x = int(input("Please input a number: "))
 a = int(input("Please input another number: "))
 
-
-
-
-
 mylist = []
-hislist = []
+common = []
 
 
-z = 1
+if x - a > 0:
+    first = x
+else:
+    first = a
+    
+    maxxie = len(mylist)
+    short = maxxie - 1
+    part = 0
 
-for i in range(x):
-    y = x % z
-    if y == 0:
-        mylist.append(z)
+def factor1():
+    z = 1
+	for i in range(x):
+    	y = x % z
+    	if y == 0 and first == x:
+        	mylist.append(z)
+        if y == 0 and first == a:
+            for i in range(short):
+            	if c == mylist[part]:
+                	common.append(c)
+                	break
+            part += 1   
             
-         
         
-    z += 1
+        z += 1
+
+
+
 
 
 c = 1
-for i in range(a):
-    b = a % c
-    if b == 0:
-        hislist.append(c)
-            
-            
+
+
+def factor2():
+    c = 1
+    for i in range(a):
+        b = a % c
+        if b == 0 and first == a:
+           mylist.append(c)
+        if b == 0 and first == x:
+        	for i in range(short):
+                if c == mylist[part]:
+                	common.append(c)
+                    break
+                
+                part += 1
+    
     c += 1
-    
-long = len(hislist)
-loong = len(mylist)
-
-if long - loong > 0:
-    par = loong
-else:
-    par = long
 
 
-            
-def gcf():
-    number = 0
-    
-    for i in range(par):
-        if mylist[number] == hislist[number]:
-            print(mylist[number])
-
-        number += 1
-    print(number)
-    print(mylist)
-    print(hislist)
-    
-gcf()
+if first == x:
+    factor1()
+    factor2()
+if first == a:
+    factor2()
+    factor1()
 
 
-#for i in range(srang):
-#        if list1[start] == list2[start]:
-#           print(start)
-#        start += 1
-
-#if shorter list 1 equals mylist number print it. Then add 1 to number
+print(max(common))
 
 
-#copy factors in factors. print if y = 0 and y = other y
-#a = x, b = y, c = z
-#if y == 0 and z == c:
-    #     print(z)
 
-#and z == c:
-#and y == 0 and c == z:
 
-#C an have more Than 2 numbers for GCF
 
-#Restart
+
+
+
+#make fact5or code3 but instead of adding to my list it adds to gcf list if it equals a number in my list
