@@ -52,4 +52,4 @@ if first == a:
     factor1()
 
 
-print(max(common)
+print(max(common))
